@@ -81,15 +81,6 @@ class Usuarios extends CI_Controller
         }
 	}
 	
-	public function getItems()
-    {
-        $modulo = $this->input->get('modulo');
-        $items =  $this->ItemsModel->listarItems($modulo);
-        echo json_encode(array('response' => $items, 'estatus' => 'OK', 'code' => 200));
-        
-    }
-
-
     public function cantidadUsuarios()
     {
 

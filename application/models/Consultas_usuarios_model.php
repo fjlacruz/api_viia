@@ -97,10 +97,8 @@ class Consultas_usuarios_model extends CI_Model
     $sql .= " usuario = '{$usuario}',";
     $sql .= " telefono = '{$telefono}',";
     $sql .= " rol = '{$rol}' ,";
-    $sql .= " estatus = '{$estatus}',";
-    if ($confirmarClave != NULL) {
-      $sql .= " clave = '{$confirmarClave}'";
-    }
+    $sql .= " estatus = '{$estatus}'";
+   
     $sql .= " where id_usuario={$id_usuario}";
 
     $query = $this->db->query($sql);
